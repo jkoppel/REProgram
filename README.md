@@ -49,8 +49,7 @@ the reprogrammed region it is meant to fit in; this can typically be
 overcome just be widening the region to include adjacent instructions and
 adding them to the reprogramming code.
 
-History
-#######
+##History
 
 REProgram is a successor to nopper, which simulated nopping out code using breakpoints. nopper (and some nifty screenshots) are available at http://code.google.com/p/nopper/
 
