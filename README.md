@@ -1,17 +1,14 @@
-What is it
-##########
+##What is it
 
  - A plugin for IDA Pro 6.1 and higher (and lower?)
  - A way of making almost-arbitrary changes to an executable when run under a debugger -- even changes that don't fit
  - A portmanteau of "reverse-engineering" and "reprogram"
 
-Installation
-############
+##Installation
 
 Drag the compiled plugin into the IDA "plugins" directory
 
-Usage
-#####
+##Usage
 
 1. Select the region of code you wish to replace, and run REProgram from the Plugins menu or press Alt+F2.
 2.In the prompt that pops up, enter the (possibly empty) code that you wish to run instead of the
@@ -21,8 +18,8 @@ within the reprogrammed region and run the plugin again.
 
 A list of all reprogrammed regions is available under the View menu.
 
-What's Possible
-###############
+##What's Possible
+
 
 REProgram has two modes of working. If the assembly you type in is not
 larger than the original selection, it will behave essentially the same as
@@ -41,8 +38,7 @@ the region to the outside are. Note that, as REProgram uses breakpoints to
 implement this behavior, focus will return to IDA every time a region
 reprogrammed in this manner is hit; minimizing IDA is recommended.
 
-What's Not
-##########
+##What's Not
 
 Only x86 is supported. REProgram uses IDA's onboard assembler, and suffers
 from all its shortcomings. One workaround is to use the db directive to
